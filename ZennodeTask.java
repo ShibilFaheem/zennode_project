@@ -2,7 +2,7 @@ import java.util.Scanner;
 
 public class ZennodeTask {
     public static void main(String[]as){
-        System.out.println("!!WELCOME!!\nHAPPY SHOPPING!!");
+        System.out.println("!!WELCOME!!");
         Scanner sc=new Scanner(System.in);
         System.out.println("Price List:\nThe Product A: $20.00\nThe Product B: $40.00\nThe Product C: $50.00");
         System.out.println("\nEnter the no. of units of PRODUCT A you wish to buy:");
@@ -27,7 +27,7 @@ public class ZennodeTask {
             D_flat10 = RealTotal-10;
         }
         
-        float D_PriceA=0;
+        float D_PriceA=0; 
         float D_PriceB=0;
         double D_PriceC=0;
         if(QtyA>10){
@@ -86,12 +86,12 @@ public class ZennodeTask {
         sc.close();
         System.out.println("\n");
 
-        System.out.println("The total units ordered is             "+Qty+" no.s");
-        System.out.println("The total MRP of the cart is           $"+RealTotal);
-        System.out.println("The BEST Total Price after dicount is  $"+BestDiscount);
-        System.out.println("The charges applicable for wrapping is $"+WrapCharge);
-        System.out.println("The shipping charge is                 $"+DeliveryCharge);
-        System.out.println("The TOTAL AMOUNT payable is            $"+(BestDiscount + WrapCharge + DeliveryCharge));
-        System.out.println("\nThank You for shopping with us.");
+        System.out.println("The total units ordered is             "+Qty+" no.s"+
+                            "\nThe total MRP of the cart is           $"+RealTotal+
+                            "\nThe BEST Total Price after dicount is  $"+BestDiscount+
+                            "\nThe charges applicable for wrapping is $"+WrapCharge+
+                            "\nThe shipping charge is                 $"+DeliveryCharge+
+                            "\nThe TOTAL AMOUNT payable is            $"+(BestDiscount + WrapCharge + DeliveryCharge)+
+                            "\nThank You for shopping with us.");
     }
 }
